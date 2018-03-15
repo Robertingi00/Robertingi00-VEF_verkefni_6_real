@@ -31,6 +31,9 @@
 						<h1 class="alignleft">Samtals:</h1>
 						<h1 class="alignright">{{pantanir['heildarverd']}}</h1>
 						<div style="clear: both;"></div>
+						<h1 class="alignleft">Samtals-vask:</h1>
+						<h1 class="alignright">{{round(pantanir['heildarverd-vask'])}}</h1>
+						<div style="clear: both;"></div>
 					</article>
 				</div>
 		</section>
