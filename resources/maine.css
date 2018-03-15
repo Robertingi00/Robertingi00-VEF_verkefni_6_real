@@ -1,0 +1,143 @@
+@charset "UTF-8";
+body {
+  background-image: url(/static/back_pizza.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0em; }
+
+header {
+  z-index: 1;
+  background-color: #0078AE;
+  box-shadow: 0 0 0.5em rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  margin: 0em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.kvittun {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .kvittun .wrapper-kvittun {
+    margin: .5em;
+    margin-top: 8em;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); }
+    .kvittun .wrapper-kvittun .kaupandi {
+      width: 20em;
+      background-color: #fefefe;
+      border-radius: 20px;
+      padding: 1em;
+      text-align: center;
+      display: grid;
+      margin-bottom: 2em; }
+      .kvittun .wrapper-kvittun .kaupandi article .fyrirsogn {
+        margin-bottom: 0;
+        margin-top: 2em;
+        opacity: .34; }
+      .kvittun .wrapper-kvittun .kaupandi article .data {
+        margin-top: 8px;
+        height: 1em; }
+      .kvittun .wrapper-kvittun .kaupandi article .alignleft {
+        float: left; }
+      .kvittun .wrapper-kvittun .kaupandi article .alignright {
+        float: right; }
+
+.wrapper-panta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  margin-top: 14em !important;
+  padding: 1em;
+  background-color: #efefef;
+  border-radius: 20px;
+  font-family: 'Lobster', cursive;
+  text-align: center; }
+  .wrapper-panta article h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 38px; }
+  .wrapper-panta article h3 {
+    text-align: center; }
+  .wrapper-panta article form input[type=text],
+  .wrapper-panta article form input[type=email],
+  .wrapper-panta article form input[type=simi] {
+    border-bottom: 1px solid transparent;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: 100%;
+    font-family: inherit;
+    vertical-align: baseline;
+    border-bottom: 1px solid black;
+    text-align: center;
+    width: 100%;
+    opacity: 1;
+    background-color: #efefef;
+    height: 2em; }
+  .wrapper-panta article form h1 {
+    font-size: 26px; }
+  .wrapper-panta article form .alegg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center; }
+  .wrapper-panta article form input[type=submit] {
+    margin-top: 4em;
+    width: 100%;
+    padding: .5em;
+    background-color: #0078AE; }
+
+.wrapper-signup section {
+  background-color: 19242;
+  padding: 2em;
+  margin: auto;
+  max-width: 60em; }
+
+footer {
+  background-color: #484D6D;
+  grid-area: footer;
+  text-align: center;
+  padding: 1em;
+  margin-top: 8em;
+  font-size: 22px; }
+
+@media screen and (min-width: 37.5em) {
+  .wrapper-panta {
+    margin: auto; }
+    .wrapper-panta article {
+      width: 30.5em; }
+
+  .kvittun .wrapper-kvittun {
+    grid-template-columns: repeat(2, 1fr); } }
+/*==== viðmið 48em (760px ====*/
+@media screen and (min-width: 48em) {
+  .wrapper-panta {
+    max-width: 48em;
+    margin: auto; }
+    .wrapper-panta article {
+      width: 30.5em; } }
+/*==== viðmið 48em (760px ====*/
+@media screen and (min-width: 60em) {
+  .wrapper-panta {
+    margin: auto;
+    max-width: 60em; }
+    .wrapper-panta article {
+      width: 30em; }
+
+  .kvittun .wrapper-kvittun {
+    grid-template-columns: repeat(3, 1fr); } }
+@media screen and (min-width: 80em) {
+  .wrapper-panta {
+    margin: auto;
+    max-width: 60em; }
+
+  .kvittun .wrapper-kvittun {
+    grid-template-columns: repeat(3, 1fr); } }
+
+/*# sourceMappingURL=maine.css.map */
