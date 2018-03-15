@@ -44,18 +44,20 @@ def order():
     alegg = request.query.getall('alegg')
     print(alegg)
 
-
     if pizzasize == '9':
-        pizzuverd = (1000 + (200* len(alegg)))*1.25
+        pizzuverd = (1000 + (200* len(alegg)))
+        pizzuverd_vask = (1000 + (200 * len(alegg))) * 1.25
 
     elif pizzasize == '12':
-        pizzuverd = (1500 + (200 * len(alegg))) * 1.25
+        pizzuverd = (1500 + (200 * len(alegg)))
+        pizzuverd_vask = (1500 + (200 * len(alegg))) * 1.25
 
     elif pizzasize == '16':
-        pizzuverd = (2000 + (200 * len(alegg))) * 1.25
+        pizzuverd = (2000 + (200 * len(alegg)))
+        pizzuverd_vask = (2000 + (200 * len(alegg))) * 1.25
     if alegg == []:
         alegg.append('margarita')
-    pontun= {'Nafn':fullname,'Heimilisfang':heimilisfang,'Baer':baer,'simi':simi,'mail':mail,'pizzasize':pizzasize,'alegg':alegg,'heildarverd':pizzuverd}
+    pontun= {'Nafn':fullname,'Heimilisfang':heimilisfang,'Baer':baer,'simi':simi,'mail':mail,'pizzasize':pizzasize,'alegg':alegg,'heildarverd':pizzuverd,'heildarverd-vask':pizzuverd_vask}
     return template('kvittun',pantanir=pontun)
 
 @route('/static/<filename>')
