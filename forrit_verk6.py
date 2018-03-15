@@ -70,4 +70,4 @@ def error404(error):
 def error500(error):
     return template('error')
 
-run(host='localhost', port='8080', debug='True', reloader='True')
+run(host="0.0.0.0", port=os.environ.get('PORT'))
